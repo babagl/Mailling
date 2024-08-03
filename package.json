@@ -1,0 +1,35 @@
+{
+  "name": "tensoremail",
+  "version": "1.0.0",
+  "description": "shared mail and newlester with users",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -k -n \"typescript,Node\" -p \"[{name}]\" -c \"blue,green\"  \"tsc --watch\" \"nodemon dist/index.js\""
+  },
+  "author": "babagl",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/figlet": "^1.5.8",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.2",
+    "@types/nodemailer": "^6.4.15",
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "prisma": "^5.17.0",
+    "ts-jest": "^29.2.4",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@hubspot/api-client": "^11.1.0",
+    "@prisma/client": "^5.17.0",
+    "@types/express": "^4.17.21",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "figlet": "^1.7.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.14"
+  }
+}
